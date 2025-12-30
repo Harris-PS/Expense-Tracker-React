@@ -71,13 +71,13 @@ function ExpenseTracker() {
           {expenses.map(item => (
             <li key={item.id}>
               {item.title} - ${item.amount}
-              <button onClick={() => dispatch({ type: ACTIONS.DELETE, payload: item.id })}>
+              <button className="delete-btn" onClick={() => dispatch({ type: ACTIONS.DELETE, payload: item.id })}>
                 Delete
               </button>
             </li>
           ))}        
         </ul>
-        <p>Total Expense: {total}</p>
+        <p>Total Expense: ${total}</p>
       </div>
 
     </div>
