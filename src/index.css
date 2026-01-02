@@ -65,3 +65,8 @@ li {
   background-color: rgb(132, 0, 255);
   cursor: pointer;
 }
+
+.theme-container{
+  display: flex;
+  justify-content: right;
+}
