@@ -5,10 +5,10 @@ import { ThemeContext } from './contexts/ThemeContext';
 
 function App() {
 
-  const { theme } = useContext(ThemeContext);
+  const { state } = useContext(ThemeContext);
 
   return (
-    <div className={`app ${theme}`}>
+    <div className={`app ${state.theme}`}>
       <ThemeToggle/>
       <ExpenseTracker/>
     </div>
